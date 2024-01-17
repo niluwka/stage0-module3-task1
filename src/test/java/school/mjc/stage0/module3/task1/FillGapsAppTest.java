@@ -25,7 +25,7 @@ class FillGapsAppTest extends BaseIOTest {
     }
 
     @Test
-    public void verifyCode(CompilationUnit parsed) {
+     void verifyCode(CompilationUnit parsed) {
         MethodDeclaration main = findMain(parsed);
 
         int helloWorldSouts = main.findAll(MethodCallExpr.class,

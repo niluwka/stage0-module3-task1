@@ -14,10 +14,10 @@ import static school.mjc.parser.Asserts.assertNoInitializationBlocks;
 import static school.mjc.parser.Asserts.assertNoMethodsExceptMain;
 import static school.mjc.parser.Util.parse;
 
-public class AllowedCodeTest {
+ class AllowedCodeTest {
 
     @Test
-    public void verifyThatForbiddenCodeNotUsed() throws IOException {
+     void verifyThatForbiddenCodeNotUsed() throws IOException {
         Files.walk(Paths.get("src/main/java/school/mjc/stage0/module3/task1"))
                 .filter(Files::isRegularFile)
                 .forEach(path -> {
